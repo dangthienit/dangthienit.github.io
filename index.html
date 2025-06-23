@@ -23,6 +23,22 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Mặc định: hiển thị tên đầy đủ */
+        .name-short {
+        display: none;
+        }
+
+        /* Khi ở màn hình nhỏ hơn 768px (mobile) */
+        @media (max-width: 768px) {
+        .name-full {
+            display: none;
+        }
+        .name-short {
+            display: inline;
+        }
+        }  
+   </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -69,9 +85,9 @@
                 </nav>
             </div>
             <div class="sidebar-footer">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:nguyendangthien.vn@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="https://www.facebook.com/dangthien.dev/"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
             </div>
         </div>
         <div class="content">
@@ -79,10 +95,12 @@
             <div class="header" id="header">
                 <div class="content-inner">
                     <p>I'm</p>
-                    <h1>Nguyen Dang Thien</h1>
+                    <h1>
+                         <span class="name-full">Nguyen Dang Thien</span>
+                         <span class="name-short">Thien</span>
+                    </h1>
                     <h2></h2>
-                    <div class="typed-text">Web & Mobile Developer, Automation Systems, AI Enthusiast, Scalable Software
-                        Architect</div>
+                    <div class="typed-text">Web & Mobile Developer, Automation Systems, AI Enthusiast, Scalable Software Architect</div>
                 </div>
             </div>
             <!-- Header End -->
@@ -90,8 +108,8 @@
             <!-- Large Button Start -->
             <div class="large-btn">
                 <div class="content-inner">
-                    <a class="btn" href="#"><i class="fa fa-download"></i>Resume</a>
-                    <a class="btn" href="#"><i class="fa fa-hands-helping"></i>Hire Me</a>
+                    <a class="btn" href="mailto:nguyendangthien.vn@gmail.com"><i class="fa fa-envelope"></i>Sent mail</a>
+                    <a class="btn" href="https://www.facebook.com/dangthien.dev/"><i class="fab fa-facebook-f"></i>More than</a>
                 </div>
             </div>
             <!-- Large Button End -->
@@ -114,7 +132,7 @@
                                 projects that I have independently developed and deployed, which have reached millions
                                 of usage sessions.
                             </p>
-                            <a class="btn" href="#">Hire Me</a>
+                            <!-- <a class="btn" href="#">Hire Me</a> -->
                         </div>
                     </div>
                     <div class="row">
