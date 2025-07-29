@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>My QR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 20px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    .container h2 {
+      color: #6a11cb;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .container > p {
+      color: #666;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .qr-section {
+      margin-bottom: 30px;
+    }
+
+    .qr-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .qr-card {
+      background: #f9f9f9;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .qr-card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .qr-card h3 {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .qr-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .qr-card a {
+      color: #5c6bc0;
+      text-decoration: none;
+    }
+
+    .button {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .qr-card h3 {
+        font-size: 16px;
+      }
+      .qr-card p {
+        font-size: 13px;
+      }
+    }
+	.qr-image {
+  display: inline-block;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background-color: white;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- <h2>My QR</h2> -->
+    <!-- <p>We are always ready to support you. Please contact us via the channels below.</p> -->
+
+    <!-- QR SUPPORT SECTION -->
+    <div class="qr-section">
+      <h2>Support</h2>
+      <div class="qr-wrapper">
+        <div class="qr-card">
+		 <div class="qr-image">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.facebook.com/dangthien.dev" alt="Facebook QR">
+		   </div>
+          <h3>Facebook Support</h3>
+          <p>Scan QR code or <a href="https://www.facebook.com/dangthien.dev" target="_blank">visit here</a></p>
+        </div>
+
+        <div class="qr-card">
+		 <div class="qr-image">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://zalo.me/0942480357" alt="Zalo QR">
+		    </div>
+          <h3>Zalo Support</h3>
+          <p>Scan QR code or <a href="https://zalo.me/0942480357" target="_blank">visit here</a></p>
+        </div>
+
+        <div class="qr-card">
+		 <div class="qr-image">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://t.me/dangthiendev" alt="Telegram QR">
+  </div>
+ 
+          <h3>Telegram Support</h3>
+          <p>Scan QR code or <a href="https://t.me/dangthiendev" target="_blank">visit here</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- QR SOCIAL SECTION -->
+    <div class="qr-section">
+      <h2>Social</h2>
+      <div class="qr-wrapper">
+        <div class="qr-card">
+    <div class="qr-image">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.youtube.com/@dangthiendev" alt="Telegram QR">
+  </div>
+ 
+          <h3>YouTube</h3>
+          <p>Scan QR code or <a href="https://www.youtube.com/@dangthiendev" target="_blank">visit here</a></p>
+        </div>
+
+        <div class="qr-card">
+		  <div class="qr-image">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.tiktok.com/@dangthien.dev alt="Telegram QR">
+         </div>
+ 
+          <h3>TikTok</h3>
+          <p>Scan QR code or <a href="https://www.tiktok.com/@dangthien.dev" target="_blank">visit here</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- QR BANK SECTION -->
+    <div class="qr-section">
+      <h2>Bank</h2>
+      <div class="qr-wrapper">
+        <div class="qr-card">
+          <img src="qrcode-bidv.png" alt="BIDV QR">
+          <h3>BIDV Bank</h3>
+          <p>Scan QR code or <a href="https://bidv.com.vn" target="_blank">visit here</a></p>
+        </div>
+
+        <div class="qr-card">
+          <img src="qrcode-agribank.png" alt="Agribank QR">
+          <h3>Agribank</h3>
+          <p>Scan QR code or <a href="https://agribank.com.vn" target="_blank">visit here</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <a class="button" href="mailto:your@email.com">📧 Contact us via Email</a> -->
+  </div>
+
+</body>
+</html>
