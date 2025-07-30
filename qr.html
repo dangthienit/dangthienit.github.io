@@ -78,7 +78,7 @@
     .qr-card p {
       font-size: 14px;
       color: #666;
-      line-height: 0px; 
+     
     }
 
     .qr-card a {
@@ -119,6 +119,31 @@
       border-radius: 12px;
       background-color: white;
     }
+    
+
+
+    .qr-card.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.qr-card.horizontal .qr-image {
+  flex-shrink: 0;
+}
+
+.qr-card.horizontal .qr-text {
+  flex: 1;
+}
+
+/* Mobile: chuyển sang dọc */
+@media (max-width: 600px) {
+  .qr-card.horizontal {
+    flex-direction: column;
+    text-align: center;
+  }
+}
   </style>
 </head>
 
@@ -138,7 +163,7 @@
               src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.facebook.com/dangthien.dev"
               alt="Facebook QR">
           </div>
-          <h3>Facebook Support</h3>
+          <h3>Facebook</h3>
           <p>Scan QR code or <a href="https://www.facebook.com/dangthien.dev" target="_blank">visit here</a></p>
         </div>
 
@@ -147,7 +172,7 @@
             <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://zalo.me/0942480357"
               alt="Zalo QR">
           </div>
-          <h3>Zalo Support</h3>
+          <h3>Zalo</h3>
           <p>Scan QR code or <a href="https://zalo.me/0942480357" target="_blank">visit here</a></p>
         </div>
 
@@ -157,67 +182,89 @@
               alt="Telegram QR">
           </div>
 
-          <h3>Telegram Support</h3>
+          <h3>Telegram</h3>
           <p>Scan QR code or <a href="https://t.me/dangthiendev" target="_blank">visit here</a></p>
         </div>
       </div>
     </div>
 
+
     <!-- QR SOCIAL SECTION -->
     <div class="qr-section">
       <!-- <h2>Social</h2> -->
       <div class="qr-wrapper">
-        <div class="qr-card">
+      
+        <div class="qr-card horizontal">
           <div class="qr-image">
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.youtube.com/@dangthiendev"
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.youtube.com/@dangthiendev"
+              alt="YouTube QR">
+          </div>
+          <div class="qr-text">
+            <h3>YouTube</h3>
+            <p>Scan QR code or <a href="https://www.youtube.com/@dangthiendev" target="_blank">visit here</a></p>
+          </div>
+        </div>
+     
+        <div class="qr-card horizontal">
+          <div class="qr-image">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.tiktok.com/@dangthien.dev"
               alt="Telegram QR">
           </div>
-
-          <h3>YouTube</h3>
-          <p>Scan QR code or <a href="https://www.youtube.com/@dangthiendev" target="_blank">visit here</a></p>
-        </div>
-
-        <div class="qr-card">
-          <div class="qr-image">
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.tiktok.com/@dangthien.dev"
-              alt="Telegram QR">
+          <div class="qr-text">
+            <h3>TikTok</h3>
+            <p>Scan QR code or <a href="https://www.tiktok.com/@dangthien.dev" target="_blank">visit here</a></p>
           </div>
-
-          <h3>TikTok</h3>
-          <p>Scan QR code or <a href="https://www.tiktok.com/@dangthien.dev" target="_blank">visit here</a></p>
-        </div>
+        </div>  
+    
       </div>
     </div>
 
-    <!-- QR BANK SECTION -->
-    <div class="qr-section">
-      <!-- <h2>Bank</h2> -->
-      <div class="qr-wrapper">
-        <div class="qr-card">
-          <div class="qr-image">
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.tiktok.com/@dangthien.dev"
-              alt="BIDV QR">
-          </div>
+<!-- QR BANK SECTION -->
+<div class="qr-section">
+  <!-- <h2>Bank</h2> -->
+  <div class="qr-wrapper">
 
-          <h3>BIDV Bank</h3>
-          <p>Scan QR code or <a href="https://bidv.com.vn" target="_blank">visit here</a></p>
-        </div>
 
-        <div class="qr-card">
-          <div class="qr-image">
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.tiktok.com/@dangthien.dev"
-              alt="Agribank QR">
-          </div>
 
-          <h3>Agribank</h3>
-          <p>Scan QR code or <a href="https://agribank.com.vn" target="_blank">visit here</a></p>
-        </div>
+
+    <div class="qr-card horizontal">
+      <div class="qr-image">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=00020101021138540010A00000072701240006970418011054008552420208QRIBFTTA53037045802VN6304610C"
+          alt="BIDV QR">
+
       </div>
+      <div class="qr-text">
+        <h3>BIDV Bank</h3>
+        <p>Nguyễn Đăng Thiên</p>
+        <p>5400855242</p>
+        <p><i>Scan QR code on the side</i></p>
+      </div>
+
     </div>
+
+
+
+    <div class="qr-card horizontal">
+      <div class="qr-image">
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=00020101021138570010A00000072701270006970405011339092051310490208QRIBFTTA53037045802VN63042F0E"
+          alt="Agribank QR">
+
+      </div>
+      <div class="qr-text">
+        <h3>Agribank</h3>
+        <p>Nguyễn Đăng Thiên</p>
+        <p>3909205131049</p>
+        <p><i>Scan QR code on the side</i></p>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>
 
     <!-- <a class="button" href="mailto:your@email.com">📧 Contact us via Email</a> -->
   </div>
